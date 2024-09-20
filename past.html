@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Tense Explanation</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            padding: 20px;
+            color: white;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Explanation Box */
+        .explanation-box {
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: black;
+        }
+
+        .explanation-box h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        /* 3D Button styling with updated colors */
+        .btn-3d {
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-3d:hover {
+            background: linear-gradient(135deg, #388E3C, #66BB6A);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Grid layout for buttons - 2x2 */
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Explanation of Past Tense -->
+        <div class="explanation-box">
+            <h2>Past Tense (अतीत काल)</h2>
+            <p>Past Tense refers to actions or events that happened in the past. There are four main types of past tenses:</p>
+            
+            <ul>
+                <li><b>Past Simple (साधारण भूतकाल):</b> Used for actions that happened at a specific point in the past. <br>
+                    <strong>Structure:</strong> Subject + V2 (past form of the verb) + object. <br>
+                    <strong>Example:</strong> I played football yesterday.
+                </li>
+                
+                <li><b>Past Continuous (अपूर्ण भूतकाल):</b> Used for actions that were ongoing at a specific time in the past. <br>
+                    <strong>Structure:</strong> Subject + was/were + V-ing (verb + ing) + object. <br>
+                    <strong>Example:</strong> I was playing football when it started raining.
+                </li>
+
+                <li><b>Past Perfect (पूर्ण भूतकाल):</b> Used to describe an action that was completed before another action in the past. <br>
+                    <strong>Structure:</strong> Subject + had + V3 (past participle) + object. <br>
+                    <strong>Example:</strong> I had played football before he arrived.
+                </li>
+
+                <li><b>Past Perfect Continuous (पूर्ण अपूर्ण भूतकाल):</b> Used for actions that were ongoing for some time before another action happened. <br>
+                    <strong>Structure:</strong> Subject + had been + V-ing (verb + ing) + object. <br>
+                    <strong>Example:</strong> I had been playing football for two hours before it started raining.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Buttons for navigation in 2x2 layout -->
+        <div class="btn-container">
+            <button class="btn-3d" onclick="location.href='pastsimple.html'">Past Simple</button>
+            <button class="btn-3d" onclick="location.href='pastcontinuous.html'">Past Continuous</button>
+            <button class="btn-3d" onclick="location.href='pastperfect.html'">Past Perfect</button>
+            <button class="btn-3d" onclick="location.href='pastperconti.html'">Past Perfect Continuous</button>
+        </div>
+    </div>
+
+    <!-- Sticky Back button positioned at the right -->
+    <button class="back-btn" onclick="window.history.back();">Back</button>
+<style>
+          /* tense chart button styling */
+          .tensechart {
+            background-color: #2F22FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+            transition: transform 0.2s ease;
+          }
+  
+          .tensechart:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+          }
+          
+</style>
+  <div>
+    <button class="tensechart" onclick="window.location.href='tensechart.html';">Tense Chart ✅</button>
+</div>
+</body>
+</html>
