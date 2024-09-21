@@ -91,9 +91,9 @@ Refresh
         <table id="Notificationtable">
             <tr>
               <td>
-       <b>●18-09-2024</b>
+       <b>●Date</b>
                 
-                :- (सभी tense के पेज में tense Chart का बटन लगाया गया है )
+                (Coming Soon)
               </td>
             </tr>
         </table>
@@ -124,6 +124,68 @@ Refresh
             overlay.style.display = 'none';
         });
     </script>
+
+
+
+
+
+
+
+
+
+	<style>
+	  #abhiimg {
+	    width: 100%;
+	    height: auto;
+	    max-width: 100%;
+	    max-height: 100vh;
+	    object-fit: cover;
+	    border: 5px solid #333;
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+	    border-radius: 10px;
+	    position: relative;
+	  }
+
+	  .loading-animation {
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50%;
+	    border: 5px solid #333;
+	    border-top-color: #FFFFFF;
+	    animation: spin 1s linear infinite;
+	  }
+
+	  @keyframes spin {
+	    0% {
+	      transform: translateX(-50%) rotate(0deg);
+	    }
+
+	    100% {
+	      transform: translateX(-50%) rotate(360deg);
+	    }
+	  }
+	</style>
+		<div style="text-align:center;">
+		<img id="abhiimg" src="abhi.jpg" />
+		<div class="loading-animation"></div>
+	</div>
+	
+	<script>
+		setTimeout(function() {
+			document.getElementById("abhiimg").style.display = "none";
+			document.querySelector(".loading-animation").style.display = "none";
+		}, 6000);
+	</script>
+
+
+
+
+
+
 
 
 
