@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject-Verb Agreement</title>
+    <style>
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Heading Style */
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #2d3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Rule Box Style */
+.rule {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 01);
+}
+
+/* Highlighting Verbs */
+.verb {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Tick and Cross Styling */
+.icon {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.correct {
+    color: #27ae60;
+}
+
+.wrong {
+    color: #e74c3c;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #2d3e50; /* Clear table border */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #2d3e50; /* Visible border for all cells */
+    vertical-align: top; /* Align text to the top for clarity */
+    white-space: normal; /* Allows wrapping of text into multiple lines */
+    font-size: 16px;
+}
+
+/* Table header */
+th {
+    background-color: #2d3e50;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #dff9fb;
+    transition: 0.3s ease;
+}
+
+td.correct {
+    color: #27ae60;
+}
+
+td.wrong {
+    color: #e74c3c;
+}
+
+/* Additional Styling for Visual Appeal */
+.rule p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.rule ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rule ul li {
+    margin: 10px 0;
+}
+
+/* Animation for Hovering */
+table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .rule p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .rule p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Subject-Verb Agreement</h1>
+
+    <div class="rule">
+        <h2>Rule 1:</h2>
+        <p>सभी subjects के नाम singular होते हैं। इनके साथ हमेशा singular verb use की जायेगी।</p>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Correct Sentence</th>
+                    <th>Incorrect Sentence</th>
+                </tr>
+                <tr>
+                    <td>Politics <span class="verb">is</span> an interesting subject. <span class="icon correct">✔</span></td>
+                    <td>Politics <span class="verb">are</span> an interesting subject. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Mathematics <span class="verb">is</span> a difficult subject. <span class="icon correct">✔</span></td>
+                    <td>Mathematics <span class="verb">are</span> a difficult subject. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>The news <span class="verb">is</span> on at 9 PM. <span class="icon correct">✔</span></td>
+                    <td>The news <span class="verb">are</span> on at 9 PM. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>The information <span class="verb">is</span> useful. <span class="icon correct">✔</span></td>
+                    <td>The information <span class="verb">are</span> useful. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Gymnastics <span class="verb">is</span> a popular sport. <span class="icon correct">✔</span></td>
+                    <td>Gymnastics <span class="verb">are</span> a popular sport. <span class="icon wrong">✘</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="rule">
+        <h2>Rule 2:</h2>
+        <p>सभी देशों के नाम singular होते हैं तथा इनके साथ हमेशा singular verb use की जायेगी।</p>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Correct Sentence</th>
+                    <th>Incorrect Sentence</th>
+                </tr>
+                <tr>
+                    <td>India <span class="verb">is</span> my country. <span class="icon correct">✔</span></td>
+                    <td>India <span class="verb">are</span> my country. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Sri Lanka <span class="verb">is</span> our neighbour country. <span class="icon correct">✔</span></td>
+                    <td>Sri Lanka <span class="verb">are</span> our neighbour country. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Japan <span class="verb">is</span> known for its technology. <span class="icon correct">✔</span></td>
+                    <td>Japan <span class="verb">are</span> known for its technology. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Canada <span class="verb">is</span> famous for its natural beauty. <span class="icon correct">✔</span></td>
+                    <td>Canada <span class="verb">are</span> famous for its natural beauty. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Russia <span class="verb">is</span> the largest country in the world. <span class="icon correct">✔</span></td>
+                    <td>Russia <span class="verb">are</span> the largest country in the world. <span class="icon wrong">✘</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Note: लेकिन किसी भी जगह का नाम उसके किसी भी समूह के लिये use किया जाय तो उसे Plural मानेंगे।</p>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Correct Sentence</th>
+                    <th>Incorrect Sentence</th>
+                </tr>
+                <tr>
+                    <td>India <span class="verb">are</span> to win the match. <span class="icon correct">✔</span></td>
+                    <td>India <span class="verb">is</span> to win the match. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>England <span class="verb">are</span> leading the tournament. <span class="icon correct">✔</span></td>
+                    <td>England <span class="verb">is</span> leading the tournament. <span class="icon wrong">✘</span></td>
+                </tr>
+                <tr>
+                    <td>Italy <span class="verb">are</span> hosting the event. <span class="icon correct">✔</span></td>
+                    <td>Italy <span class="verb">is</span> hosting the event. <span class="icon wrong">✘</span></td>
+                </tr>
+            </table>
+        </div>
+
+   </div>
+
+<div class="rule">
+  <h2>Rule 3</h2>
+  <p>सभी पुस्तकों के नाम singular होते हैं तथा इनके साथ हमेशा singular verb use की जाती है।</p>
+  <table>
+    <tr>
+      <td>The Mid Summer's Dream <span class="verb">are</span> my favourite book.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+      <td>The Mid Summer's Dream <span class="verb">is</span> my favourite book.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+  <h2>Rule 4</h2>
+  <p>सभी बीमारियों के नाम singular होते हैं तथा इनके साथ हमेशा singular verb use की जाती है।</p>
+  <table>
+    <tr>
+      <td>Cancer <span class="verb">is</span> a dangerous disease.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Cancer <span class="verb">are</span> a dangerous disease.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+  <h2>Rule 5</h2>
+  <p>सभी खेलों के नाम singular होते हैं तथा इनके साथ हमेशा singular verb use की जायेगी।</p>
+  <table>
+    <tr>
+      <td>Darts <span class="verb">is</span> my favourite game.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Cricket <span class="verb">is</span> played in all over the world.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+  <h2>Rule 6</h2>
+  <p>Material nouns तथा Abstract Nouns हमेशा singular होते हैं या इनके साथ use होने वाली verb singular होती है।</p>
+  <table>
+    <tr>
+      <td>Water <span class="verb">is</span> life.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Honesty <span class="verb">is</span> the best policy.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Gold <span class="verb">is</span> a precious metal.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Gold and Silver <span class="verb">are</span> precious metals.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Childhood and boyhood <span class="verb">are</span> golden times of life.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+  <h2>Rule 7</h2>
+  <p>कुछ Nouns ऐसे होते हैं, जो हमेशा Pair में use किये जाते हैं उनके साथ हमेशा singular verb use की जाती है।</p>
+  <table>
+    <tr>
+      <td>Slow and steady always <span class="verb">win</span>.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+      <td>Slow and steady always <span class="verb">wins</span>.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Your bag and baggage <span class="verb">are</span> ready so you may go now.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+      <td>Your bag and baggage <span class="verb">is</span> ready so you may go now.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+  <h2>Rule 8</h2>
+  <p>यदि किसी sentence में each/every + singular countable noun + and + each/every singular countable noun या each / every + singular countable noun + and + singular countable noun आ रहा हो, तो इनके साथ हमेशा singular verb use की जायेगी।</p>
+  <table>
+    <tr>
+      <td>Each man and each woman <span class="verb">are</span> ready to do everything for the nation.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+      <td>Each man and each woman <span class="verb">is</span> ready to do everything for the nation.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Each student and teacher <span class="verb">is</span> to attend the programme.</td>
+      <td><span class="icon correct">✔</span></td>
+    </tr>
+    <tr>
+      <td>Each student and teacher <span class="verb">are</span> to attend the programme.</td>
+      <td><span class="icon wrong">✘</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="rule">
+ <h2>Rule 9</h2>
+<p>सभी Indefinite pronoun (Everyone, everybody, everything, no one, nobody, nothing, anyone, anybody, anything, someone, somebody, something, one) के साथ हमेशा singular verb use की जाती है।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>Nothing <span class="verb">is</span> impossible. <span class="icon correct">✔</span></td>
+        <td>Nothing <span class="verb">are</span> impossible. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Everyone <span class="verb">wants</span> to help me in my bad days. <span class="icon correct">✔</span></td>
+        <td>Everyone <span class="verb">want</span> to help me in my bad days. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Everything <span class="verb">is</span> in its place. <span class="icon correct">✔</span></td>
+        <td>Everything <span class="verb">are</span> in its place. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Something <span class="verb">is</span> wrong here. <span class="icon correct">✔</span></td>
+        <td>Something <span class="verb">are</span> wrong here. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Nothing <span class="verb">has</span> changed since last year. <span class="icon correct">✔</span></td>
+        <td>Nothing <span class="verb">have</span> changed since last year. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Anybody <span class="verb">is</span> welcome to join us. <span class="icon correct">✔</span></td>
+        <td>Anybody <span class="verb">are</span> welcome to join us. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Somebody <span class="verb">has</span> left their bag here. <span class="icon correct">✔</span></td>
+        <td>Somebody <span class="verb">have</span> left their bag here. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Everyone <span class="verb">is</span> attending the meeting. <span class="icon correct">✔</span></td>
+        <td>Everyone <span class="verb">are</span> attending the meeting. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Nothing <span class="verb">is</span> more important than health. <span class="icon correct">✔</span></td>
+        <td>Nothing <span class="verb">are</span> more important than health. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Anyone <span class="verb">is</span> allowed to enter the room. <span class="icon correct">✔</span></td>
+        <td>Anyone <span class="verb">are</span> allowed to enter the room. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+
+<div class="rule">
+
+
+<h2>Rule 10</h2>
+<p>यदि either या neither को किसी sentence के subject के रूप में use किये जाय तो हमेशा singular verb use की जायेगी।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>There are two books here but either <span class="verb">is</span> useful to me. <span class="icon correct">✔</span></td>
+        <td>There are two books here but either <span class="verb">are</span> useful to me. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Both my friends are rich but neither <span class="verb">is</span> intelligent. <span class="icon correct">✔</span></td>
+        <td>Both my friends are rich but neither <span class="verb">are</span> intelligent. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Either of the students <span class="verb">is</span> allowed to speak. <span class="icon correct">✔</span></td>
+        <td>Either of the students <span class="verb">are</span> allowed to speak. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Neither of them <span class="verb">wants</span> to go to the party. <span class="icon correct">✔</span></td>
+        <td>Neither of them <span class="verb">want</span> to go to the party. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Either of the cars <span class="verb">is</span> available for rent. <span class="icon correct">✔</span></td>
+        <td>Either of the cars <span class="verb">are</span> available for rent. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Neither of the houses <span class="verb">is</span> for sale. <span class="icon correct">✔</span></td>
+        <td>Neither of the houses <span class="verb">are</span> for sale. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Either option <span class="verb">is</span> acceptable. <span class="icon correct">✔</span></td>
+        <td>Either option <span class="verb">are</span> acceptable. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Neither answer <span class="verb">is</span> correct. <span class="icon correct">✔</span></td>
+        <td>Neither answer <span class="verb">are</span> correct. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Either choice <span class="verb">is</span> fine with me. <span class="icon correct">✔</span></td>
+        <td>Either choice <span class="verb">are</span> fine with me. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Neither plan <span class="verb">is</span> working. <span class="icon correct">✔</span></td>
+        <td>Neither plan <span class="verb">are</span> working. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+
+
+  </div>
+<div class="rule">
+
+<h2>Rule 11</h2>
+<p>यदि कोई भी दो Clauses Relative Pronoun (who, whose, whom, which, that) से जुड़े हुए हैं, तो वहाँ use होने वाली दूसरी verb antecedent (पूर्वपद) के अनुसार होगी।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>I who <span class="verb">teach</span> students <span class="verb">am</span> in trouble. <span class="icon correct">✔</span></td>
+        <td>I who <span class="verb">teach</span> students <span class="verb">are</span> in trouble. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>My father who <span class="verb">helps</span> people <span class="verb">is</span> a kind-hearted person. <span class="icon correct">✔</span></td>
+        <td>My father who <span class="verb">helps</span> people <span class="verb">are</span> a kind-hearted person. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The teacher who <span class="verb">guides</span> us <span class="verb">is</span> absent today. <span class="icon correct">✔</span></td>
+        <td>The teacher who <span class="verb">guides</span> us <span class="verb">are</span> absent today. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>She who <span class="verb">loves</span> books <span class="verb">is</span> my friend. <span class="icon correct">✔</span></td>
+        <td>She who <span class="verb">loves</span> books <span class="verb">are</span> my friend. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>We who <span class="verb">believe</span> in justice <span class="verb">are</span> united. <span class="icon correct">✔</span></td>
+        <td>We who <span class="verb">believes</span> in justice <span class="verb">is</span> united. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The dog that <span class="verb">barks</span> a lot <span class="verb">is</span> friendly. <span class="icon correct">✔</span></td>
+        <td>The dog that <span class="verb">barks</span> a lot <span class="verb">are</span> friendly. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He who <span class="verb">fights</span> for others <span class="verb">is</span> brave. <span class="icon correct">✔</span></td>
+        <td>He who <span class="verb">fights</span> for others <span class="verb">are</span> brave. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The woman who <span class="verb">cooks</span> dinner <span class="verb">is</span> my mother. <span class="icon correct">✔</span></td>
+        <td>The woman who <span class="verb">cooks</span> dinner <span class="verb">are</span> my mother. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The child that <span class="verb">plays</span> outside <span class="verb">is</span> happy. <span class="icon correct">✔</span></td>
+        <td>The child that <span class="verb">plays</span> outside <span class="verb">are</span> happy. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+
+<div class="rule">
+
+<h2>Rule 12</h2>
+<p>यदि कोई भी दो Clauses किसी भी Relative Pronoun से जुड़े हुए हो तथा Relative Pronoun के बाद कोई भी noun या pronoun use हो रहा हो, तो वहाँ use होने वाली पहली verb हमेशा उसी noun या pronoun के अनुसार होगी।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>He whose parents <span class="verb">are</span> rich <span class="verb">is</span> my friend. <span class="icon correct">✔</span></td>
+        <td>He whose parents <span class="verb">is</span> rich <span class="verb">is</span> my friend. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He is one of the people who <span class="verb">want</span> to meet me. <span class="icon correct">✔</span></td>
+        <td>He is one of the people who <span class="verb">wants</span> to meet me. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>She whose brothers <span class="verb">are</span> soldiers <span class="verb">is</span> brave. <span class="icon correct">✔</span></td>
+        <td>She whose brothers <span class="verb">is</span> soldiers <span class="verb">is</span> brave. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He is one of the students who <span class="verb">work</span> hard. <span class="icon correct">✔</span></td>
+        <td>He is one of the students who <span class="verb">works</span> hard. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The teacher whose classes <span class="verb">are</span> popular <span class="verb">is</span> on leave. <span class="icon correct">✔</span></td>
+        <td>The teacher whose classes <span class="verb">is</span> popular <span class="verb">is</span> on leave. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He is the only one of the players who <span class="verb">wants</span> to stay. <span class="icon correct">✔</span></td>
+        <td>He is the only one of the players who <span class="verb">want</span> to stay. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The man whose children <span class="verb">are</span> successful <span class="verb">is</span> happy. <span class="icon correct">✔</span></td>
+        <td>The man whose children <span class="verb">is</span> successful <span class="verb">is</span> happy. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The woman whose sons <span class="verb">are</span> doctors <span class="verb">is</span> proud. <span class="icon correct">✔</span></td>
+        <td>The woman whose sons <span class="verb">is</span> doctors <span class="verb">is</span> proud. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+
+<div class="rule">
+
+
+
+
+
+<h2>Rule 13</h2>
+<p>यदि कोई भी दो Clauses किसी भी Relative Pronoun से जुड़े हुए हो तथा Relative Pronoun के तुरंत बाद verb use करनी हो, तो वह antecedent के अनुसार होगी।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>I who <span class="verb">am</span> your friend <span class="verb">want</span> to help him. <span class="icon correct">✔</span></td>
+        <td>I who <span class="verb">is</span> your friend <span class="verb">want</span> to help him. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>We who <span class="verb">are</span> your neighbors <span class="verb">want</span> to visit. <span class="icon correct">✔</span></td>
+        <td>We who <span class="verb">is</span> your neighbors <span class="verb">want</span> to visit. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He who <span class="verb">is</span> my teacher <span class="verb">has</span> taught me well. <span class="icon correct">✔</span></td>
+        <td>He who <span class="verb">am</span> my teacher <span class="verb">has</span> taught me well. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>She who <span class="verb">is</span> the manager <span class="verb">runs</span> the company. <span class="icon correct">✔</span></td>
+        <td>She who <span class="verb">are</span> the manager <span class="verb">runs</span> the company. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The students who <span class="verb">are</span> responsible <span class="verb">will</span> stay behind. <span class="icon correct">✔</span></td>
+        <td>The students who <span class="verb">is</span> responsible <span class="verb">will</span> stay behind. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The child who <span class="verb">is</span> lost <span class="verb">needs</span> help. <span class="icon correct">✔</span></td>
+        <td>The child who <span class="verb">are</span> lost <span class="verb">needs</span> help. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The people who <span class="verb">are</span> waiting <span class="verb">need</span> information. <span class="icon correct">✔</span></td>
+        <td>The people who <span class="verb">is</span> waiting <span class="verb">need</span> information. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+
+<div class="rule">
+
+
+
+
+
+<h2>Rule 14</h2>
+<p>कुछ Nouns हमेशा Plural form में होती है तथा इनके साथ हमेशा Plural verb use की जाती है।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>My arrears <span class="verb">have</span> not been paid yet. <span class="icon correct">✔</span></td>
+        <td>My arrears <span class="verb">has</span> not been paid yet. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The contents <span class="verb">are</span> interesting. <span class="icon correct">✔</span></td>
+        <td>The contents <span class="verb">is</span> interesting. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>His belongings <span class="verb">were</span> stolen. <span class="icon correct">✔</span></td>
+        <td>His belongings <span class="verb">was</span> stolen. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>All the surroundings <span class="verb">are</span> beautiful. <span class="icon correct">✔</span></td>
+        <td>All the surroundings <span class="verb">is</span> beautiful. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The wages <span class="verb">are</span> low in this company. <span class="icon correct">✔</span></td>
+        <td>The wages <span class="verb">is</span> low in this company. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>Her earnings <span class="verb">are</span> sufficient. <span class="icon correct">✔</span></td>
+        <td>Her earnings <span class="verb">is</span> sufficient. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The archives <span class="verb">contain</span> valuable documents. <span class="icon correct">✔</span></td>
+        <td>The archives <span class="verb">contains</span> valuable documents. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+<div class="rule">
+
+
+
+
+
+<h2>Rule 15</h2>
+<p>कुछ nouns हमेशा singular uncountable noun के रूप में use होते हैं उनके साथ use होने वाली verb हमेशा singular होती है।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>The furniture <span class="verb">has</span> been moved. <span class="icon correct">✔</span></td>
+        <td>The furniture <span class="verb">have</span> been moved. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The scenery <span class="verb">is</span> breathtaking. <span class="icon correct">✔</span></td>
+        <td>The scenery <span class="verb">are</span> breathtaking. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The machinery <span class="verb">is</span> outdated. <span class="icon correct">✔</span></td>
+        <td>The machinery <span class="verb">are</span> outdated. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>His advice <span class="verb">is</span> helpful. <span class="icon correct">✔</span></td>
+        <td>His advice <span class="verb">are</span> helpful. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The equipment <span class="verb">is</span> new. <span class="icon correct">✔</span></td>
+        <td>The equipment <span class="verb">are</span> new. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The information <span class="verb">was</span> accurate. <span class="icon correct">✔</span></td>
+        <td>The information <span class="verb">were</span> accurate. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+<div class="rule">
+
+
+
+
+
+<h2>Rule 16</h2>
+<p>यदि कोई भी subject preposition से बनाया जाता है उस sentence में use होने वाली verb हमेशा preposition के पहले use हुए भाग के according होगी।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>One of the students <span class="verb">is</span> going on a historical tour. <span class="icon correct">✔</span></td>
+        <td>One of the students <span class="verb">are</span> going on a historical tour. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>He with his friends <span class="verb">is</span> going to watch a movie. <span class="icon correct">✔</span></td>
+        <td>He with his friends <span class="verb">are</span> going to watch a movie. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>One of the books <span class="verb">is</span> missing. <span class="icon correct">✔</span></td>
+        <td>One of the books <span class="verb">are</span> missing. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The boy with the girls <span class="verb">was</span> playing. <span class="icon correct">✔</span></td>
+        <td>The boy with the girls <span class="verb">were</span> playing. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The teacher along with the students <span class="verb">is</span> coming. <span class="icon correct">✔</span></td>
+        <td>The teacher along with the students <span class="verb">are</span> coming. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rule">
+
+
+
+
+
+
+<h2>Rule 17</h2>
+<p>कुछ Collective nouns singular तथा Plural दोनों forms में एक जैसे ही use किये जाते हैं।</p>
+<table>
+    <tr>
+        <th>Correct Sentence</th>
+        <th>Incorrect Sentence</th>
+    </tr>
+    <tr>
+        <td>The parliament <span class="verb">has</span> voted to pass the bill. <span class="icon correct">✔</span></td>
+        <td>The parliament <span class="verb">have</span> voted to pass the bill. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The jury <span class="verb">is</span> deciding the case. <span class="icon correct">✔</span></td>
+        <td>The jury <span class="verb">are</span> deciding the case. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The team <span class="verb">has</span> won the match. <span class="icon correct">✔</span></td>
+        <td>The team <span class="verb">have</span> won the match. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The committee <span class="verb">is</span> in session. <span class="icon correct">✔</span></td>
+        <td>The committee <span class="verb">are</span> in session. <span class="icon wrong">✘</span></td>
+    </tr>
+    <tr>
+        <td>The government <span class="verb">has</span> announced a new policy. <span class="icon correct">✔</span></td>
+        <td>The government <span class="verb">have</span> announced a new policy. <span class="icon wrong">✘</span></td>
+    </tr>
+</table>
+  </div>
+ 
+
+</body>
+</html>

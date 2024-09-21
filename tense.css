@@ -1,0 +1,143 @@
+/* Import a unique font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+}
+
+
+
+/* Centered content for logo and buttons */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Offset below header */
+}
+
+/* Logo styling */
+.logo {
+    width: 300px; /* Adjust logo size */
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+/* Button grid styling */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2x2 grid */
+    gap: 9px; /* Space between buttons */
+    justify-items: center; /* Center buttons in grid */
+}
+/* 3D Button (Anchor) styling */
+.button-3d {
+    display: inline-block;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px #005f7a;
+    width: 160px; /* Set button width */
+}
+
+/* Button hover effect */
+.button-3d:hover {
+    background-color: #007B9C;
+    transform: translateY(-4px);
+    box-shadow: 0 8px #005f7a;
+}
+
+/* Button active effect */
+.button-3d:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px #005f7a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .button-3d {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button-3d {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+
+#tenseexplain {
+            width: 80%;
+            height: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            color: #333;
+            overflow-y: auto;
+        }
+
+        #tenseexplain h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        #tenseexplain h2 {
+            font-size: 20px;
+            color: #007bff;
+            margin-top: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        #tenseexplain p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #tenseexplain ul {
+            margin-left: 20px;
+        }
+
+        #tenseexplain ul li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
