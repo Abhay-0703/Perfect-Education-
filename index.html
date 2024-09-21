@@ -16,58 +16,73 @@
     
     
     
-    	<style>
-    	  #abhiimg {
-    	    width: 100%;
-    	    top: 80px;
-    	    right: 0.5%;
-    	    height: auto;
-    	    max-width: 100%;
-    	    max-height: 100vh;
-    	    object-fit: cover;
-    	    border: 5px solid #333;
-    	    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
-    	    border-radius: 10px;
-    	    z-index: 1004;
-    	    position: fixed;
-    	  }
+       
+  	<style>
+		#abhiimg {
+			width: 100%;
+			top: 50%;
+			height: auto;
+			max-width: 100%;
+			max-height: 100vh;
+			object-fit: cover;
+			border: 5px solid #333;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			border-radius: 10px;
+			position: relative;
+			z-index: 1002;
+		}
+		
+		.loading-animation {
+			position: absolute;
+			bottom: 1%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 5px solid #333;
+			border-top-color: #fff;
+			animation: spin 1s linear infinite;
+			z-index: 1003;
+		}
+		
+		@keyframes spin {
+			0% {
+				transform: translateX(-50%) rotate(0deg);
+			}
+			100% {
+				transform: translateX(-50%) rotate(360deg);
+			}
+		}
+	</style>
+
+	<div style="text-align:center;" id="image-container">
+		<img id="abhiimg" src="abhi.jpg" />
+		<div class="loading-animation"></div>
+	</div>
+	
+	<script>
+		const imageContainer = document.getElementById("image-container");
+		const lastSeenKey = "lastSeenTimestamp";
+		const fiveMinutes = 6 * 60 * 1000; // 5 minutes in milliseconds
+		
+		const lastSeenTimestamp = localStorage.getItem(lastSeenKey);
+		const currentTimestamp = new Date().getTime();
+		
+		if (!lastSeenTimestamp || currentTimestamp - lastSeenTimestamp >= fiveMinutes) {
+			// Show image and animation
+			imageContainer.style.display = "block";
+			
+			setTimeout(function() {
+				imageContainer.style.display = "none";
+				localStorage.setItem(lastSeenKey, currentTimestamp);
+			}, 3000);
+		} else {
+			// Hide image and animation
+			imageContainer.style.display = "none";
+		}
+	</script>
     
-    	  .loading-animation {
-    	    position: absolute;
-    	    bottom: 0;
-    	    left: 50%;
-    	    transform: translateX(-50%);
-    	    width: 50px;
-    	    height: 50px;
-    	    border-radius: 50%;
-    	    border: 5px solid #333;
-    	    border-top-color: #FFFFFF;
-    	    animation: spin 1s linear infinite;
-    	 z-index: 1006;
-    	 position: fixed;
-    	  }
-    
-    	  @keyframes spin {
-    	    0% {
-    	      transform: translateX(-50%) rotate(0deg);
-    	    }
-    
-    	    100% {
-    	      transform: translateX(-50%) rotate(360deg);
-    	    }
-    	  }
-    	</style>
-    	<div style="text-align:center;">
-    	  <img id="abhiimg" src="abhi.jpg" />
-    	  <div class="loading-animation"></div>
-    	</div>
-    
-    	<script>
-    	  setTimeout(function() {
-    	    document.getElementById("abhiimg").style.display = "none";
-    	    document.querySelector(".loading-animation").style.display = "none";
-    	  }, 5000);
-    	</script>
     
     
     <!-- Logo in center -->
