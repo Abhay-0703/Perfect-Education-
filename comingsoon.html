@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon </title>
+    <style>
+        /* Basic page styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Coming Soon Text */
+        .coming-soon {
+            font-size: 100px;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            animation: bounce 2s infinite;
+            z-index: 10;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Join button on the bottom-right */
+        .join-button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 10;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .join-button:hover {
+            background-color: #218838;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Coming Soon Text -->
+    <h1 class="coming-soon">Coming Soon</h1>
+
+    <!-- Join button -->
+    <a href="https://chat.whatsapp.com/C634vDTjDFO4z8xWxkbE9b" class="join-button">Join For Latest Updates</a>
+
+
+</body>
+</html>
